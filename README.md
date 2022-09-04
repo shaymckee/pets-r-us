@@ -1,2 +1,5 @@
 # pets-r-us
-Express project
+## Author
+<ul>
+  <li>Shay McKee</li>
+</ul>

@@ -1,0 +1,551 @@
+/* Title: styles.css
+  Author: Shay McKee
+  Date: 09/04/2022
+  Description: Styling for all HTML files. */
+
+
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.topnav1 {
+  overflow: hidden;
+  background-color: burlywood;
+      padding: 20px 10px 5px 10px;
+  align-items: end;
+  
+  
+};
+
+.petTital{
+ text-decoration-line: none;
+
+}
+
+.topnav1 a{
+  float: left;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+   text-decoration-line: none;
+  
+}
+
+.topnav1 a:hover {
+  background-color: white;
+  color: blue;
+   text-decoration-line: none;
+}
+
+/* Create a right-aligned (split) link inside the navigation bar */
+.topnav1 a.split  {
+  float: right;
+  /* background-color: blue; */
+  color:black;
+  padding-right:10px;
+  padding-left:10px;
+  text-decoration-line: none;
+}
+
+
+.titlenav{
+  padding-bottom: 0px;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("../images/background-img.jpg");
+/* background-color:lightgrey ; */
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+/* Position the navbar container inside the image */
+.containerbar {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+/* The navbar */
+.topnav {
+  overflow: hidden;
+  /* background-color:burlywood; */
+}
+
+/* Navbar links */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  /* background-color: #ddd; */
+  color: black;
+}
+
+.navbtn{
+background-color:burlywood ;
+border-radius: 5px;
+border-color: #f1f1f1;
+}
+
+h1 {
+    background-color:burlywood;
+    margin: auto;
+    padding: 20px;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 20px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.companyinfo{
+text-align: center;
+margin-right:200px;
+margin-left: 200px;;
+
+}
+
+/* Location hours */
+.rowhours {
+  display: flex;
+    /* justify-content:center; */
+    margin-top: 10px;
+    margin-bottom:30px;
+    margin-left:200px;
+}
+
+#card-container {
+      /* background-color: var(--card-background-color); */
+    /* Add shadows to cards. */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 400px;
+    
+
+}
+
+.card-title {
+
+  text-align: center;
+      text-align: center;
+    padding: 20px 20px 10px 20px ;
+    font-family: auto;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+ul {
+
+  list-style: none;
+    text-align: center;
+    margin-top: 0px;
+    padding-left: 0px;
+}
+
+.opentime {
+ padding:5px;
+font-family: auto;
+    font-size: 1rem;
+}
+
+.sunli{
+  padding-bottom:20px;
+}
+
+.location {
+/* margin-left: 150px; */
+    font-family: auto;
+   font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 5px
+    padding：15px;
+}
+
+
+#email{
+      padding-right: 100px;
+}
+
+#label{
+   font-size: 1.5rem
+}
+
+
+hr {
+    width: 500px;
+    height: 3px;
+    background-color: #e07e7b;
+    border: 0;
+    margin-bottom: 50px;
+}
+
+.quote {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 40px 0 25px;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 150px 100px 150px;
+}
+
+.grid {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.locations .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.locations .grid li {
+    padding: 50px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+
+.left-align{
+  padding-left: 30px;
+    text-align: left;
+}
+
+.locationtbellevue{
+      margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.address{
+  margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact{
+  margin-bottom: 5px;
+}
+
+.contactp{
+  margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.weekly-dog{
+ padding:20px;
+ background-color: lightgray;
+ width: 80%;
+ /* text-align: center; */
+ margin:auto;
+ margin-bottom: 70px;
+
+}
+
+.testDog{
+    float: left;
+    width: 25%;
+    border-radius: 50%;
+    margin-left: 100px;
+  margin-top: 3px;
+}
+
+.dogInfo{
+margin-right: 100px;
+margin-left: 400px;
+}
+
+.font{
+  font-size: 2rem;
+}
+
+.serviceTital {
+  padding-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* grooming page */
+
+#groomBtn{
+  text-align: center;
+}
+
+.groomButton{
+
+  border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    width: 40%;
+    text-align: center;
+    font-size: medium;
+}
+
+.groomPI{
+    margin-right: 100px;
+    margin-left: 400px;
+
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: burlywood;
+   color: black;
+   text-align: center;
+  
+}
+
+.trainDog {
+        float: left;
+    width: 25%;
+    border-radius: 50%;
+    /* margin-left: 100px; */
+    margin-top: -50px;
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+.grid {
+        /* width: 55%; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridTrain{
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.card-titleTrain{
+  text-align: center;
+      text-align: center;
+    padding: 20px 20px 10px 320px ;
+    font-family: auto;
+    font-weight: bold;
+    font-size: 2em;
+
+
+}
+
+
+.p-10{
+  padding:5px;
+}
+
+.trainul{
+      padding: 0px 10px 0px 10px;
+}
+
+.trainers{
+ margin-bottom:150px;
+
+}
+
+.trainerimg{
+
+  height:300px;
+}
+
+.cardBoard{
+      width: 50%;
+    float: right;
+    margin-top: 50px;
+    /* margin-bottom: 200px; */
+}
+
+.boardSec{
+  margin-bottom: 450px;
+}
+
+#boardBtn{
+
+text-align: center;
+
+}
+
+.boardButton{
+  width: 80%;
+}
+
+
+
+
+/* drop down nav */
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding-top: 25px;
+      padding-top: 25px;
+    padding-bottom: 15px;padding-bottom: 15px;
+}
+
+.dropdown {
+  /* position: relative;
+  display: inline-block; */
+  float:right;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   right: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+/* register page */
+
+.signUpContainer{
+padding: 20px 16px;
+    width: 60%;
+    text-align: center;
+   margin: 50px auto 50px auto;
+   
+   
+}
+
+.inputSignUp{
+      width: 60%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.labelSignUp{
+  padding:20px;
+}
+
+.signUpContent{
+  /* margin-top:20px; */
+  background-color: lightgray;
+  padding-top:20px;
+}
+
+.btnR{
+    margin-bottom: 100px;
+    width: 60%;
+    background-color: black;
+    color: white;
+    font-size: large;
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+table, th, td {
+  border: 1px solid;
+  margin:auto;
+  padding:10px;
+}

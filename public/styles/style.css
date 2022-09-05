@@ -1,8 +1,7 @@
 /* Title: styles.css
   Author: Shay McKee
   Date: 09/04/2022
-  Description: Styling for all HTML files. */
-
+  Description: Styling for all HTML files */
 
 
 body {
@@ -23,13 +22,10 @@ html {
   background-color: burlywood;
       padding: 20px 10px 5px 10px;
   align-items: end;
-  
-  
 };
 
 .petTital{
  text-decoration-line: none;
-
 }
 
 .topnav1 a{
@@ -39,7 +35,6 @@ html {
   text-decoration: none;
   font-size: 25px;
    text-decoration-line: none;
-  
 }
 
 .topnav1 a:hover {
@@ -69,7 +64,7 @@ html {
 /* background-color:lightgrey ; */
   min-height: 380px;
 
-  /* Center and scale the image nicely */
+  /* Center and scale the image */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,7 +173,6 @@ h1 {
 text-align: center;
 margin-right:200px;
 margin-left: 200px;;
-
 }
 
 /* Location hours */
@@ -196,8 +190,6 @@ margin-left: 200px;;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
     width: 400px;
-    
-
 }
 
 .card-title {
@@ -208,7 +200,6 @@ margin-left: 200px;;
     font-family: auto;
     font-weight: bold;
     font-size: 1.5em;
-
 }
 
 ul {
@@ -322,7 +313,6 @@ hr {
  /* text-align: center; */
  margin:auto;
  margin-bottom: 70px;
-
 }
 
 .testDog{
@@ -372,7 +362,6 @@ margin-left: 400px;
 .groomPI{
     margin-right: 100px;
     margin-left: 400px;
-
 }
 
 .footer {
@@ -383,7 +372,6 @@ margin-left: 400px;
    background-color: burlywood;
    color: black;
    text-align: center;
-  
 }
 
 .trainDog {
@@ -406,7 +394,6 @@ margin-left: 400px;
     width: 55%;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .card-titleTrain{
@@ -416,8 +403,6 @@ margin-left: 400px;
     font-family: auto;
     font-weight: bold;
     font-size: 2em;
-
-
 }
 
 
@@ -431,7 +416,6 @@ margin-left: 400px;
 
 .trainers{
  margin-bottom:150px;
-
 }
 
 .trainerimg{
@@ -453,15 +437,11 @@ margin-left: 400px;
 #boardBtn{
 
 text-align: center;
-
 }
 
 .boardButton{
   width: 80%;
 }
-
-
-
 
 /* drop down nav */
 
@@ -503,49 +483,3 @@ text-align: center;
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
-/* register page */
-
-.signUpContainer{
-padding: 20px 16px;
-    width: 60%;
-    text-align: center;
-   margin: 50px auto 50px auto;
-   
-   
-}
-
-.inputSignUp{
-      width: 60%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-
-}
-
-.labelSignUp{
-  padding:20px;
-}
-
-.signUpContent{
-  /* margin-top:20px; */
-  background-color: lightgray;
-  padding-top:20px;
-}
-
-.btnR{
-    margin-bottom: 100px;
-    width: 60%;
-    background-color: black;
-    color: white;
-    font-size: large;
-    padding: 10px;
-    margin-top: 10px;
-
-}
-
-table, th, td {
-  border: 1px solid;
-  margin:auto;
-  padding:10px;
-}

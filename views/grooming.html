@@ -14,15 +14,13 @@
   </head>
   <body>
     <!-- import navbar and header -->
-    <header>
-      <h1>Grooming</h1>
-  </header>
+      <header><%- include('./partials/header'); %></header>
   
   <div id="navbar">
-      <a href="index.html">Home</a>
-      <a href="boarding.html">Boarding</a>
-      <a href="grooming.html">Grooming</a>
-      <a href="training.html">Training</a>
+      <a href="./index.html">Home</a>
+      <a href="./boarding.html">Boarding</a>
+      <a href="./grooming.html">Grooming</a>
+      <a href="./training.html">Training</a>
   </div>
 
     <section>
@@ -76,6 +74,6 @@
       <p class="author">- Brent Martinez</p>
     </section>
 
-    <p>&copy; Copyright Shay McKee</p>
+    <footer class="footer"><%- include('./partials/footer'); %></footer>
   </body>
 </html>

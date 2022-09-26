@@ -1,0 +1,58 @@
+<!-- ============================================
+; Title: customer.html
+; Author: Shay McKee
+; Start Date: 09/25/2022
+; Description: Customers List for Pets-R-Us
+============================================ -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/site.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    
+        <title>Pets-R-Us</title>
+    </head>
+    <body>
+     <!-- Import navbar and header -->
+     <navbar><%- include('./partials/navbar'); %></navbar>
+     <header><%- include('./partials/header'); %></header>
+        <main>
+            <hr>
+            <!-- Customer content -->
+            <div id="customers">
+                <% if(customers.length > 0) { %>
+                    <table id="tblCustomers">
+                        <tr>
+                            <th>Customer ID</th>
+                            <th>Email</th>
+                        </tr>
+                        <tbody>
+                        <% customers.forEach(function(customer) { %>
+                        <tr>
+                            <td>
+                                <%= customer.customerID %>
+                            </td>
+                            <td>
+                                <%= customer.email %>
+                            </td>
+                        </tr>
+                        <% }) %>
+                        </tbody>
+                    </table>
+                    <% } else { %>
+                    <h3>Customers have not been added to the MongoDB database.  Try adding some!</h3>
+                    <% } %>
+            </div>
+            <hr>
+        </main>
+        <!-- Import footer-->
+        <footer>
+            <%- include('./partials/_footer.html'); %>
+        </footer>
+    </body>
+</html>
